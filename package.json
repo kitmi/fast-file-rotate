@@ -1,8 +1,11 @@
 {
   "name": "fast-file-rotate",
-  "version": "1.0.1",
+  "version": "1.0.1-fix.1",
   "description": "A performant file transport providing daily log rotation for winston.",
   "main": "lib/FileRotateTransport.js",
+  "peerDependencies": {
+    "winston": "^3"
+  },
   "dependencies": {
     "fast-date-format": "^2.0.0",
     "mkdirp": "^0.5.1",
@@ -10,6 +13,7 @@
     "winston-transport": "^4.2.0"
   },
   "devDependencies": {
+    "ajv": "^6.5.4",
     "coveralls": "^3.0.2",
     "fastbench": "^1.0.1",
     "standard": "^12.0.1",
@@ -22,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SerayaEryn/fast-file-rotate.git"
+    "url": "git+https://github.com/kitmi/fast-file-rotate.git"
   },
   "scripts": {
     "unit": "tap test/*.test.js",
@@ -41,5 +45,11 @@
     "daily-rotate-file"
   ],
   "author": "Denis Fäcke",
+  "contributors": [    
+    {
+      "name": "Rockie Guo",
+      "email": "rockie@kitmi.com.au"
+    }
+  ],
   "license": "MIT"
 }
